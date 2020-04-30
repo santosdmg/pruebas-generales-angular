@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Ng4LoadingSpinnerService } from 'ng4-loading-spinner';
 
 @Component({
   selector: 'app-home',
@@ -6,7 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class HomeComponent implements OnInit {
-  constructor() { }
+  template: string =`<div class="ng-busy-custom"></div>`
+  constructor(private spinnerService: Ng4LoadingSpinnerService) { }
 
-  ngOnInit() { }
+  ngOnInit() {
+    this.spinnerService.show();
+  }
 }

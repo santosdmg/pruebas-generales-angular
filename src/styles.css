@@ -1,1 +1,25 @@
 /* Add application styles & imports to this file! */
+
+ng4-loading-spinner .spinner {
+  opacity: inherit;
+  background: #ffffffad !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ng4-loading-spinner .ng-busy-custom {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 1003;
+  background: url('/assets/img/logo.gif') no-repeat;
+  background-size: cover;
+  width: 60px;
+  height: 60px;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+}
